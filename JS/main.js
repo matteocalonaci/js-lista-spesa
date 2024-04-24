@@ -25,6 +25,11 @@ console.log("Nella mia lista ci sono:", myList);
 const myListLength = myList.length;
 console.log("La mia lista è lunga:", myListLength);
 
+
+// aggiungo del contenuto alla mia ul
+
+const myListContainer = document.querySelector("ul");
+
 // inizio un ciclo FOR
 
 // for (i = 0; i < myListLength; i++) {
@@ -47,6 +52,13 @@ while (i < myListLength) {
     const myListElement = myList[i];
     console.log("Nella mia lista c'è:", myListElement);
 
+    const liElement = document.createElement("li");
+    liElement.innerText = myListElement;
+    myListContainer.append("Devo comprare:", liElement);
+
     // istruzioni per terminare il ciclo
     i++
 }
+
+//Reset in caso venga riutilizzata in futuro
+i = 0;
