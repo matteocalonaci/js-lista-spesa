@@ -27,9 +27,26 @@ console.log("La mia lista è lunga:", myListLength);
 
 // inizio un ciclo FOR
 
-for (i = 0; i < myListLength; i++) {
+// for (i = 0; i < myListLength; i++) {
+
+//     // stampo in console gli elementi della lista
+//     const myListElement = myList[i];
+//     console.log("Nella mia lista c'è:", myListElement);
+// }
+
+
+// converto il ciclo FOR in ciclo WHILE
+
+// contatore
+let i = 0;
+
+// condizione
+while (i < myListLength) {
 
     // stampo in console gli elementi della lista
     const myListElement = myList[i];
     console.log("Nella mia lista c'è:", myListElement);
+
+    // istruzioni per terminare il ciclo
+    i++
 }
